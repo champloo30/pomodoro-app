@@ -1,0 +1,117 @@
+@import "../global.scss";
+
+body {
+    margin: 0;
+    font-family: $aviano;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 1s ease;
+
+    .menu {
+        height: 100vh;
+        width: 3rem;
+        background-color: $capri;
+        transition: all 1s ease;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .menu-container {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .menu-row {
+                height: 3rem;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                color: $azure;
+                border-bottom: 1px solid black;
+                margin: auto;
+                transition: all 1s ease;
+                text-decoration: none;
+
+                .hamburger {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    height: 32px;
+                    width: 25px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                    transition: all 1s ease;
+                    
+                    span {
+                        width: 25px;
+                        height: 2px;
+                        background-color: $azure;
+                    }
+                }
+
+                .row {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin-left: 10px;
+                    cursor: pointer;
+                    transition: all 1s ease;
+
+                    .icon {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        fill: $azure;
+                    }
+
+                    .timer-label, .tasks-label {
+                        margin-left: 1rem;
+                    }
+
+                    .dn1, .dn2 {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .active {
+        width: 20rem;
+        transition: all 1s ease;
+
+        .hamburger {
+            transition: all 1s ease;
+
+            span:nth-child(1) {
+                transform: translateY(8.5px) rotate(45deg);
+            }
+    
+            span:nth-child(2) {
+                opacity: 0;
+            }
+    
+            span:nth-child(3) {
+                transform: translateY(-8.5px) rotate(-45deg);
+            }
+        }
+    }
+
+    .main {
+        height: 100vh;
+        width: 100%;
+        background-color: $electric-blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}

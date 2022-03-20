@@ -4,6 +4,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  transition: all 1s ease;
 }
 body .menu {
   height: 100vh;
@@ -33,6 +34,7 @@ body .menu .menu-container .menu-row {
   border-bottom: 1px solid black;
   margin: auto;
   transition: all 1s ease;
+  text-decoration: none;
 }
 body .menu .menu-container .menu-row .hamburger {
   display: flex;
@@ -63,8 +65,7 @@ body .menu .menu-container .menu-row .row {
 body .menu .menu-container .menu-row .row .icon {
   width: 1.5rem;
   height: 1.5rem;
-  border-radius: 50%;
-  background-color: #EFFFFD;
+  fill: #EFFFFD;
 }
 body .menu .menu-container .menu-row .row .timer-label, body .menu .menu-container .menu-row .row .tasks-label {
   margin-left: 1rem;
@@ -98,4 +99,4 @@ body .main {
   justify-content: space-evenly;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=tasks.css.map */
