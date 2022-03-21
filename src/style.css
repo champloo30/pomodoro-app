@@ -92,11 +92,58 @@ body .active .hamburger span:nth-child(3) {
 body .main {
   height: 100vh;
   width: 100%;
-  background-color: #85F4FF;
+  background-color: #B8FFF9;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  transition: all 1s ease;
+}
+body .main h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #42C2FF;
+}
+body .main .btn-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -4rem;
+}
+body .main .btn-section .section-btn {
+  margin: 0 1rem;
+  padding: 0.5rem 0.5rem;
+  border: 2px solid #42C2FF;
+  color: #42C2FF;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+body .main .btn-section .section-btn h3 {
+  margin: 0;
+  font-weight: 600;
+}
+body .main .timer {
+  font-size: 10rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-family: milka, sans-serif;
+  color: #42C2FF;
+}
+body .main .start-stop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2rem;
+}
+body .main .start-stop .btn {
+  margin: 0 1rem;
+  padding: 0.5rem 0.5rem;
+  color: #42C2FF;
+  border: 2px solid #42C2FF;
+  font-weight: 400;
+  transition: all 1s ease;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

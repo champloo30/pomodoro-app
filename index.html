@@ -12,7 +12,7 @@
     <div id="menu" class="menu">
         <div class="menu-container">
             <div class="menu-row">
-                <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+                <div id="hamburger" class="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -32,8 +32,30 @@
             </a>
         </div>
     </div>
-    <div class="main">
-        <h1>Pomodoro App</h1>
+    <div id="main" class="main">
+        <h1 id="app-title">Pomodoro App</h1>
+        <div id="btn-section" class="btn-section">
+            <div id="pomodoro" class="section-btn">
+                <h3>Pomodoro</h3>
+            </div>
+            <div id="shortb" class="section-btn">
+                <h3>Short Break</h3>
+            </div>
+            <div id="longb" class="section-btn">
+                <h3>Long Break</h3>
+            </div>
+        </div>
+        <span id="timer" class="timer">
+            <span id="minutes"></span>:<span id="seconds"></span>
+        </span>
+        <div class="start-stop">
+            <div id="start-btn" class="btn">
+                <span>Start</span>
+            </div>
+            <div id="stop-btn" class="btn">
+                <span>Reset</span>
+            </div>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
