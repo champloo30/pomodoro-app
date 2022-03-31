@@ -98,5 +98,41 @@ body .main {
   align-items: center;
   justify-content: space-evenly;
 }
+body .main h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+body .main .month-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  width: 100%;
+  background-color: #ef767a;
+}
+body .main .month-section .left-arrow {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+body .main .month-section .month {
+  font-size: 5rem;
+  color: #EFFFFD;
+  width: 40rem;
+  text-align: center;
+}
+body .main .month-section .right-arrow {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+body .main .day-section .day-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
 
 /*# sourceMappingURL=tasks.css.map */

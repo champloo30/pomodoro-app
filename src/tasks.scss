@@ -113,5 +113,50 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .month-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 10rem;
+            width: 100%;
+            background-color: $light-coral;
+
+            .left-arrow {
+                height: 2rem;
+                width: 2rem;
+                cursor: pointer;
+                margin-right: 2rem;
+            }
+
+            .month {
+                font-size: 5rem;
+                color: $azure;
+                width: 40rem;
+                text-align: center;
+            }
+
+            .right-arrow {
+                height: 2rem;
+                width: 2rem;
+                cursor: pointer;
+                margin-left: 2rem;
+            }
+        }
+
+        .day-section {
+            
+            .day-list {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style-type: none;
+            }
+        }
     }
 }

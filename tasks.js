@@ -12,3 +12,33 @@ function toggleMenu() {
 }
 
 ham.addEventListener("click", toggleMenu);
+
+//calender
+
+const d = new Date();
+const currentMonth = d.toLocaleString('default', {month: 'long'});
+
+const month = document.getElementById("month");
+month.innerHTML = currentMonth;
+
+//arrow month click event
+
+const prev = document.getElementById("prev-month");
+
+prevMonthClick = () => {
+    d.setMonth(d.getMonth()-1);
+    const prevMonth = d.toLocaleString('default', {month: 'long'});
+    month.innerHTML = prevMonth;
+}
+
+prev.addEventListener("click", prevMonthClick);
+
+const next = document.getElementById("next-month");
+
+nextMonthClick = () => {
+    d.setMonth(d.getMonth()+1);
+    const nextMonth = d.toLocaleString('default', {month: 'long'});
+    month.innerHTML = nextMonth;
+}
+
+next.addEventListener("click", nextMonthClick);
