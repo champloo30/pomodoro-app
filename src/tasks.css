@@ -1,138 +1,17 @@
-body {
-  margin: 0;
-  font-family: aviano-future, sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  transition: all 1s ease;
-}
-body .menu {
-  height: 100vh;
-  width: 3rem;
-  background-color: #42C2FF;
-  transition: all 1s ease;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-body .menu .menu-container {
-  width: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-body .menu .menu-container .menu-row {
-  height: 3rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  color: #EFFFFD;
-  border-bottom: 1px solid black;
-  margin: auto;
-  transition: all 1s ease;
-  text-decoration: none;
-}
-body .menu .menu-container .menu-row .hamburger {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 32px;
-  width: 25px;
-  margin-left: 10px;
-  cursor: pointer;
-  transition: all 1s ease;
-}
-body .menu .menu-container .menu-row .hamburger span {
-  width: 25px;
-  height: 2px;
-  background-color: #EFFFFD;
-}
-body .menu .menu-container .menu-row .row {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: 10px;
-  cursor: pointer;
-  transition: all 1s ease;
-}
-body .menu .menu-container .menu-row .row .icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  fill: #EFFFFD;
-}
-body .menu .menu-container .menu-row .row .timer-label, body .menu .menu-container .menu-row .row .tasks-label {
-  margin-left: 1rem;
-}
-body .menu .menu-container .menu-row .row .dn1, body .menu .menu-container .menu-row .row .dn2 {
-  display: none;
-}
-body .active {
-  width: 20rem;
-  transition: all 1s ease;
-}
-body .active .hamburger {
-  transition: all 1s ease;
-}
-body .active .hamburger span:nth-child(1) {
-  transform: translateY(8.5px) rotate(45deg);
-}
-body .active .hamburger span:nth-child(2) {
-  opacity: 0;
-}
-body .active .hamburger span:nth-child(3) {
-  transform: translateY(-8.5px) rotate(-45deg);
-}
-body .main {
-  height: 100vh;
-  width: 100%;
-  background-color: #85F4FF;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-body .main h1 {
-  font-size: 3rem;
-  margin: 0;
-}
-body .main .month-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 10rem;
-  width: 100%;
-  background-color: #ef767a;
-}
-body .main .month-section .left-arrow {
-  height: 2rem;
-  width: 2rem;
-  cursor: pointer;
-  margin-right: 2rem;
-}
-body .main .month-section .month {
-  font-size: 5rem;
-  color: #EFFFFD;
-  width: 40rem;
-  text-align: center;
-}
-body .main .month-section .right-arrow {
-  height: 2rem;
-  width: 2rem;
-  cursor: pointer;
-  margin-left: 2rem;
-}
-body .main .day-section .day-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style-type: none;
-}
+/* Error: Undefined variable.
+ *     ,
+ * 111 |         background-color: $electric-blue;
+ *     |                           ^^^^^^^^^^^^^^
+ *     '
+ *   src/tasks.scss 111:27  root stylesheet */
 
-/*# sourceMappingURL=tasks.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a     \2577 \a 111 \2502          background-color: $electric-blue;\a     \2502                            ^^^^^^^^^^^^^^\a     \2575 \a   src/tasks.scss 111:27  root stylesheet";
+}

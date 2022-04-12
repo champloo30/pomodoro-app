@@ -7,6 +7,13 @@
     <title>Pomodoro App: Pomodoro</title>
     <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/fwf6fvc.css">
+    <style>
+        :root {
+            --pomodoro: #B8FFF9;
+            --shortBreak: #008080;
+            --longBreak: #EF767A;
+        }
+    </style>
 </head>
 <body>
     <div id="menu" class="menu">
@@ -32,31 +39,32 @@
             </a>
         </div>
     </div>
-    <div id="main" class="main">
+    <main id="main" class="main">
+        <progress id="progress" value="0"></progress>
+        <div class="progress-bar"></div>
         <h1 id="app-title">Pomodoro App</h1>
-        <div id="btn-section" class="btn-section">
-            <div id="pomodoro" class="section-btn">
-                <h3>Pomodoro</h3>
-            </div>
-            <div id="shortb" class="section-btn">
-                <h3>Short Break</h3>
-            </div>
-            <div id="longb" class="section-btn">
-                <h3>Long Break</h3>
-            </div>
+        <div id="btn-section" class="btn-section mode-buttons">
+            <button data-mode="pomodoro" id="pomodoro" class="button active-main mode-button">
+                Pomodoro
+            </button>
+            <button data-mode="shortBreak" id="shortBreak" class="button mode-button">
+                Short Break
+            </button>
+            <button data-mode="longBreak" id="longBreak" class="button mode-button">
+                Long Break
+            </button>
         </div>
-        <span id="timer" class="timer">
-            <span id="minutes"></span>:<span id="seconds"></span>
-        </span>
+        <div id="timer" class="timer">
+            <span id="minutes">25</span>
+            <span class="separator">:</span>
+            <span id="seconds">00</span>
+        </div>
         <div class="start-stop">
-            <div id="start-btn" class="btn">
-                <span>Start</span>
-            </div>
-            <div id="stop-btn" class="btn">
-                <span>Reset</span>
-            </div>
+            <button data-action="start" id="start-btn" class="btn">
+                Start
+            </button>
         </div>
-    </div>
+    </main>
     <script src="main.js"></script>
 </body>
 </html>

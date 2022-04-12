@@ -1,3 +1,9 @@
+:root {
+  --pomodoro: #B8FFF9;
+  --shortBreak: #008080;
+  --longBreak: #EF767A;
+}
+
 body {
   margin: 0;
   font-family: aviano-future, sans-serif;
@@ -92,12 +98,25 @@ body .active .hamburger span:nth-child(3) {
 body .main {
   height: 100vh;
   width: 100%;
-  background-color: #B8FFF9;
+  background-color: var(--pomodoro);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  transition: all 1s ease;
+  transition: background-color 1s ease;
+}
+body .main progress {
+  border-radius: 2px;
+  width: 75%;
+  height: 0.5rem;
+  position: fixed;
+  margin-top: 0;
+}
+body .main progress ::-webkit-progress-bar {
+  background-color: #42C2FF;
+}
+body .main progress ::-webkit-progress-value {
+  background-color: #EFFFFD;
 }
 body .main h1 {
   font-size: 3rem;
@@ -110,17 +129,20 @@ body .main .btn-section {
   justify-content: center;
   margin-bottom: -4rem;
 }
-body .main .btn-section .section-btn {
+body .main .btn-section .mode-button {
+  font-size: 1rem;
+  font-family: aviano-future, sans-serif;
   margin: 0 1rem;
   padding: 0.5rem 0.5rem;
-  border: 2px solid #42C2FF;
+  background: none;
+  border: 2px solid transparent;
+  border-radius: 10px;
   color: #42C2FF;
   cursor: pointer;
   transition: all 1s ease;
 }
-body .main .btn-section .section-btn h3 {
-  margin: 0;
-  font-weight: 600;
+body .main .btn-section .active-main {
+  border-color: #EFFFFD;
 }
 body .main .timer {
   font-size: 10rem;

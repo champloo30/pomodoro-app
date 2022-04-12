@@ -1,5 +1,11 @@
 @import "../global.scss";
 
+:root {
+    --pomodoro: #B8FFF9;
+    --shortBreak: #008080;
+    --longBreak: #EF767A;
+}
+
 body {
     margin: 0;
     font-family: $aviano;
@@ -108,12 +114,28 @@ body {
     .main {
         height: 100vh;
         width: 100%;
-        background-color: $celeste;
+        background-color: var(--pomodoro);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        transition: all 1s ease;
+        transition: background-color 1s ease;
+
+        progress {
+            border-radius: 2px;
+            width: 75%;
+            height: 0.5rem;
+            position: fixed;
+            margin-top: 0;
+
+            ::-webkit-progress-bar {
+                background-color: $capri;
+            }
+
+            ::-webkit-progress-value {
+                background-color: $azure;
+            }
+        }
 
         h1 {
             font-size: 3rem;
@@ -127,18 +149,21 @@ body {
             justify-content: center;
             margin-bottom: -4rem;
 
-            .section-btn {
+            .mode-button {
+                font-size: 1rem;
+                font-family: $aviano;
                 margin: 0 1rem;
                 padding: 0.5rem 0.5rem;
-                border: 2px solid $capri;
+                background: none;
+                border: 2px solid transparent;
+                border-radius: 10px;
                 color: $capri;
                 cursor: pointer;
                 transition: all 1s ease;
+            }
 
-                h3 {
-                    margin: 0;
-                    font-weight: 600;
-                }
+            .active-main {
+                border-color: $azure;
             }
         }
 
