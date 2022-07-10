@@ -52,9 +52,10 @@ function switchMode() {
 }
 
 function handleMode(event) {
-    const { mode } = event.target.dataset;
+    const {mode} = event.target.dataset;
 
     if (!mode) return;
 
     switchMode(mode);
+    console.log("worked")
 }
